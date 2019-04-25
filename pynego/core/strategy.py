@@ -2,12 +2,16 @@
 
 '''
 
+def getvalidateaction(protocolname):
+    '''to get the validate actions in the strategy, current have two'''
+
+
 class NegoStrategy(object):
 
-    def __init__(self):
-        pass
+    def __init__(self, protocolname):
+        self.actions = getvalidateaction(protocolname)
 
-    def getPerference(self):
+    def get_utility(self):
         pass
 
     def choose_action(self):
